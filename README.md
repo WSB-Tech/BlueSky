@@ -90,5 +90,5 @@ Dieses Projekt wird unter der **MIT-Lizenz** veröffentlicht, was bedeutet, dass
 
 ## 📬 Kontakt
 Hast du Fragen oder Vorschläge? Kontaktiere mich gerne:  
-- **GitHub:** [Dein-Username](https://github.com/Dein-Username)  
-- **E-Mail:** [Deine-E-Mail-Adresse]
+- **GitHub:** [WSB-Tech](https://github.com/WSB-Tech)  
+- **E-Mail:** [E-Mail-Adresse](tech@wirsindbunt.org)
