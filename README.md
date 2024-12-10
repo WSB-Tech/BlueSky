@@ -1,94 +1,154 @@
-# Keyword-Based User List Bot
+---
 
-## 🌟 Projektidee
-Der **Keyword-Based User List Bot** ist ein geplantes Open-Source-Projekt, das die Moderation auf Plattformen wie **Bluesky** erleichtern soll. Ziel ist es, einen Bot zu entwickeln, der Beiträge auf Schlüsselwörter analysiert, Nutzer basierend darauf in Listen einträgt und diese Listen für Aktionen wie das Melden oder Blockieren nutzt.
+## **BlueSky Moderation Bot**
+
+### **Überblick**
+Ein Python-basierter Moderationsbot für die BlueSky-Plattform. Der Bot verwendet die BlueSky-API, um problematische Accounts zu analysieren und in passende Listen einzutragen:
+- **Hate accs and mutuals**: Accounts, die gemeldet oder geblockt werden sollen.
+- **Verdachtsliste**: Accounts zur Überprüfung.
+- **Whitelist**: Vertrauenswürdige Accounts, die ignoriert werden.
+
+Der Bot basiert auf einer Schlüsselwortanalyse (Keywords) und verwendet Scoring, um problematische Inhalte zu identifizieren.
 
 ---
 
-## 🚀 Ziel des Projekts
-Dieses Projekt soll eine Lösung bieten für:
-- **Automatisierte Moderation:**  
-  Erkennung von Beiträgen, die bestimmte Schlüsselwörter enthalten, und automatisches Hinzufügen der Nutzer in Listen.
-- **Flexible Anpassung:**  
-  Individuell konfigurierbare Schlüsselwörter und Aktionen.
-- **Plattformübergreifende Nutzung:**  
-  Integration mit Plattformen wie **Bluesky**, **Discord**, oder anderen APIs.
+### **Funktionen**
+- **Automatisches Erstellen und Verwalten von Listen:**
+  - **Hate accs and mutuals**: Für problematische Accounts und Netzwerke.
+  - **Verdachtsliste**: Für Accounts, die manuell überprüft werden sollen.
+  - **Whitelist**: Accounts, die der Bot nicht analysieren soll.
+- **Schlüsselwortanalyse:**
+  - Bewertet Bio und Beiträge von Nutzern basierend auf definierten Keywords.
+- **Score-basierte Entscheidungen:**
+  - Accounts mit einem hohen Score landen in der Moderationsliste.
+  - Accounts mit mittlerem Score landen in der Verdachtsliste.
+- **Manuelle Pflege der Whitelist:**
+  - Die Whitelist wird ausschließlich manuell gepflegt.
+- **Protokollierung:** 
+  - Alle Aktionen (Hinzufügen zu Listen, Überspringen von Accounts) werden in einer JSON-Log-Datei gespeichert.
 
 ---
 
-## 🛠️ Aktueller Status
-Das Projekt befindet sich aktuell in der **Konzept- und Planungsphase**. Es gibt noch keinen funktionierenden Code oder Prototypen.  
+### **Anforderungen**
 
-Das Ziel dieser README ist es:  
-1. Das Projekt und seine Vision vorzustellen.  
-2. Entwickler:innen und Interessierte einzuladen, zur Planung und Umsetzung beizutragen.  
+1. **Python-Version:**  
+   - Python 3.10 oder höher
+
+2. **Abhängigkeiten:**  
+   Installiere die benötigten Pakete mit:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   **Erforderliche Pakete:**
+   - `atproto`
+   - `python-dotenv`
+
+3. **BlueSky-API-Zugang:**  
+   - Ein gültiger Benutzername und ein Passwort für die BlueSky-API.
+
+4. **Dateien:**  
+   - **`.env`**: Für API-Zugangsdaten.
+   - **`keywords.json`**: Für Keywords und Gewichtungen.
 
 ---
 
-## 🔧 Geplante Funktionen
-1. **Schlüsselwort-Erkennung:**  
-   - Analyse von Beiträgen und Kommentaren auf bestimmte Schlüsselwörter.  
-   - Flexibel anpassbare Schlüsselwort-Liste durch Konfigurationsdatei.
+### **Setup**
+
+1. **Umgebungsvariablen einrichten**
+   Erstelle eine Datei namens `.env` im Projektverzeichnis mit folgendem Inhalt:
+   ```env
+   BLUESKY_USERNAME=dein_benutzername
+   BLUESKY_PASSWORD=dein_passwort
+   ```
+
+2. **Keywords definieren**
+   Erstelle eine Datei `keywords.json` im selben Verzeichnis:
+   ```json
+   {
+     "critical_keywords": {
+       "hass": 3,
+       "gewalt": 3
+     },
+     "contextual_keywords": {
+       "nazi": 1,
+       "rechte": 1
+     },
+     "positive_keywords": [
+       "journalist",
+       "recherche"
+     ]
+   }
+   ```
+
+3. **Bot starten**
+   Starte den Bot mit:
+   ```bash
+   python bot.py
+   ```
+
+---
+
+### **Funktionsweise**
+
+1. **Login in BlueSky:**  
+   Der Bot authentifiziert sich mit den in der `.env`-Datei hinterlegten Zugangsdaten.
 
 2. **Automatische Listenverwaltung:**  
-   - Nutzer werden automatisch in vordefinierte Listen eingetragen (z. B. "Spam", "Trolle").  
-   - Speicherung der Listen in einer lokalen Datenbank (JSON oder SQLite).
+   - Der Bot erstellt die Listen `Hate accs and mutuals`, `Verdachtsliste` und `Whitelist`, falls sie nicht existieren.
 
-3. **Aktionen basierend auf Listen:**  
-   - Export der Listen in Formate wie JSON oder CSV.  
-   - Automatisierte Aktionen wie Nutzer melden, blockieren oder markieren.
+3. **Analyse von Nutzern:**  
+   - Überprüft die Bio und Beiträge eines Nutzers basierend auf den definierten Keywords.
+   - Berechnet einen Score, um den Nutzer in die passende Liste einzutragen.
 
-4. **Erweiterungen:**  
-   - **NLP (Natural Language Processing)** zur intelligenten Erkennung problematischer Inhalte.  
-   - Unterstützung für mehrere Plattformen (z. B. Bluesky, Discord, Mastodon).  
-   - Web-Interface zur einfachen Verwaltung und Konfiguration.
+4. **Score-basierte Logik:**  
+   - **Score ≥ 5**: Account wird der Moderationsliste (`Hate accs and mutuals`) hinzugefügt.  
+   - **Score ≥ 3, aber < 5**: Account wird der Verdachtsliste hinzugefügt.  
+   - **Auf der Whitelist**: Account wird ignoriert.
 
----
-
-## 💡 Roadmap
-### **Phase 1: Konzeptentwicklung (aktuell)**
-- Recherche und Definition der Architektur.  
-- Sammlung von Anforderungen und Feedback.  
-
-### **Phase 2: Prototyp-Erstellung**
-- Entwicklung eines Basissystems für die Keyword-Erkennung.  
-- Einfache Listenverwaltung (lokale Speicherung in JSON).  
-
-### **Phase 3: API-Integration**
-- Verbindung mit der Bluesky-API oder anderen Plattformen.  
-- Implementierung von Aktionen wie Nutzer melden oder blockieren.  
-
-### **Phase 4: Erweiterung**
-- Entwicklung eines benutzerfreundlichen Dashboards (z. B. mit Flask).  
-- Hinzufügen von NLP- und weiteren Analysefunktionen.  
+5. **Protokollierung:**  
+   - Aktionen werden in `log.json` dokumentiert.
 
 ---
 
-## 🤝 Mitwirken
-Dieses Projekt lebt von der Community und ist **offen für Beiträge**! Wenn du Interesse hast, mitzumachen, gibt es viele Möglichkeiten:
+### **Beispielablauf**
 
-### Wie du beitragen kannst:
-1. **Diskussion starten:**  
-   - Teile deine Ideen, Vorschläge oder Fragen im Issue-Bereich.  
-2. **Feedback geben:**  
-   - Unterstütze die Konzeptphase, indem du Feedback zur Roadmap und zu geplanten Funktionen gibst.  
-3. **Code beisteuern (zukünftig):**  
-   - Sobald die ersten Code-Bausteine erstellt sind, bist du herzlich eingeladen, diese zu erweitern.
+1. **Beispiel-Keywords:**  
+   - Bio enthält: `"Nazi-Strukturen analysieren"`  
+   - Beiträge enthalten: `"Gewalt wird verherrlicht"`
 
----
+2. **Analyse:**  
+   - Score aus der Bio: 1 (für "rechte").  
+   - Score aus den Beiträgen: 3 (für "Gewalt").  
+   - Gesamtscore: 4.  
 
-## 📚 Inspiration und Dokumentation
-- [Bluesky API-Dokumentation](https://docs.bsky.app/)  
-- [GitHub Issues Leitfaden](https://docs.github.com/en/issues)  
+3. **Entscheidung:**  
+   - Nutzer wird der **Verdachtsliste** hinzugefügt.
 
 ---
 
-## 📝 Lizenz
-Dieses Projekt wird unter der **MIT-Lizenz** veröffentlicht, was bedeutet, dass es frei verwendet, modifiziert und geteilt werden kann. Weitere Details folgen.
+### **Log-Datei**
+Alle Aktionen werden in einer JSON-Datei `log.json` gespeichert. Beispiel:
+```json
+{
+  "action": "add_to_moderation_list",
+  "did": "did:plc:exampleuser",
+  "reason": "Erfüllt Schwellenwert",
+  "timestamp": "2024-12-10 14:30:00"
+}
+```
 
 ---
 
-## 📬 Kontakt
-Hast du Fragen oder Vorschläge? Kontaktiere mich gerne:  
-- **GitHub:** [WSB-Tech](https://github.com/WSB-Tech)  
-- **E-Mail:** [E-Mail-Adresse](tech@wirsindbunt.org)
+### **Geplante Erweiterungen**
+- Implementierung einer Follower-Analyse für Mutuals.
+- Erweiterte Unterstützung für dynamische Keyword-Anpassung während der Laufzeit.
+- Benachrichtigungen bei neuen Verdachtsfällen.
+
+---
+
+**Autor:**  
+Ein enthusiastischer BlueSky-Entwickler 😊  
+**Lizenz:**  
+MIT
+
+---
