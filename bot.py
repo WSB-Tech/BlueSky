@@ -3,9 +3,12 @@ import json
 from datetime import datetime
 from atproto import Client
 from dotenv import load_dotenv
+import time
+from pytz import timezone
 
 # Debugging-Modus basierend auf Umgebungsvariable
 DEBUG_MODE = os.getenv("DEBUG_MODE", "False").lower() in ("true", "1", "yes")
+LOCAL_TIMEZONE = timezone("Europe/Berlin")  # Lokale Zeitzone, anpassbar
 
 def debug_print(message):
     if DEBUG_MODE:
@@ -42,9 +45,9 @@ def load_keywords(filename="keywords.json"):
         }
 
 keywords = load_keywords()
-CRITICAL_KEYWORDS = keywords["critical_keywords"]
-CONTEXTUAL_KEYWORDS = keywords["contextual_keywords"]
-POSITIVE_KEYWORDS = keywords["positive_keywords"]
+CRITICAL_KEYWORDS = keywords.get("critical_keywords", {})
+CONTEXTUAL_KEYWORDS = keywords.get("contextual_keywords", {})
+POSITIVE_KEYWORDS = keywords.get("positive_keywords", [])
 
 def load_local_list(filename):
     try:
@@ -67,9 +70,12 @@ def save_local_list(data, filename):
     except Exception as e:
         print(f"Fehler beim Speichern in die Datei {filename}: {e}")
 
+def get_local_timestamp():
+    return datetime.now(LOCAL_TIMEZONE).isoformat()
+
 def log_action(action, user, handle, details=""):
     log_entry = {
-        "timestamp": datetime.utcnow().isoformat() + "Z",
+        "timestamp": get_local_timestamp(),
         "action": action,
         "user": user,
         "handle": handle,
@@ -83,71 +89,93 @@ def log_action(action, user, handle, details=""):
     except Exception as e:
         print(f"Fehler beim Schreiben in die Log-Datei: {e}")
 
+def save_to_list(filename, did, action, handle, details):
+    try:
+        data = load_local_list(filename)
+        if did not in data:
+            data.append(did)
+            save_local_list(data, filename)
+            log_action(action, did, handle, details)
+            print(f"Benutzer {did} zur Liste {filename} hinzugefügt.")
+        else:
+            debug_print(f"Benutzer {did} ist bereits in der Liste {filename}.")
+    except Exception as e:
+        print(f"Fehler beim Hinzufügen von {did} zur Liste {filename}: {e}")
+
+def retry_request(func, *args, retries=3, delay=5, **kwargs):
+    for attempt in range(retries):
+        try:
+            return func(*args, **kwargs)
+        except Exception as e:
+            if "429" in str(e):
+                print(f"Rate-Limiting erkannt. Warte {delay} Sekunden...")
+            else:
+                print(f"Fehler bei Versuch {attempt + 1}: {e}")
+            time.sleep(delay)
+    print(f"Alle {retries} Versuche fehlgeschlagen.")
+    return None
+
 def resolve_handle_to_did(identifier):
     if identifier.startswith("did:"):
-        try:
-            response = client.app.bsky.actor.get_profile({"actor": identifier})
+        response = retry_request(client.app.bsky.actor.get_profile, {"actor": identifier})
+        if response:
             handle = getattr(response, "handle", None)
             debug_print(f"DID '{identifier}' aufgelöst zu Handle: {handle}")
             return identifier, handle
-        except Exception as e:
-            print(f"Fehler beim Auflösen des Handles für DID '{identifier}': {e}")
-            return identifier, None
     else:
-        try:
-            response = client.com.atproto.identity.resolve_handle({"handle": identifier})
-            if hasattr(response, "did"):
-                did = response.did
-                debug_print(f"Handle '{identifier}' aufgelöst zu DID: {did}")
-                return did, identifier
-            else:
-                debug_print(f"Fehler: Kein DID in der Antwort für Handle '{identifier}'")
-                return None, identifier
-        except Exception as e:
-            print(f"Fehler beim Auflösen des Handles '{identifier}': {e}")
-            return None, identifier
+        response = retry_request(client.com.atproto.identity.resolve_handle, {"handle": identifier})
+        if response and hasattr(response, "did"):
+            did = response.did
+            debug_print(f"Handle '{identifier}' aufgelöst zu DID: {did}")
+            return did, identifier
+    debug_print(f"Fehler: Handle/DID '{identifier}' konnte nicht aufgelöst werden.")
+    return None, None
 
 def get_profile(did):
-    try:
-        response = client.app.bsky.actor.get_profile({"actor": did})
+    response = retry_request(client.app.bsky.actor.get_profile, {"actor": did})
+    if response:
         debug_print(f"Profil abgerufen für DID {did}: {response}")
         return response
-    except Exception as e:
-        print(f"Fehler beim Abrufen des Profils für {did}: {e}")
-        return None
+    log_action("profile_fetch_error", did, None, "Profil konnte nicht abgerufen werden")
+    return None
 
-def fetch_user_posts_and_replies(did):
-    try:
-        response = client.app.bsky.feed.get_author_feed({"actor": did})
+def fetch_user_posts(did):
+    response = retry_request(client.app.bsky.feed.get_author_feed, {"actor": did})
+    if response and hasattr(response, "feed"):
         debug_print(f"Beiträge abgerufen für DID {did}: {response}")
-        return response.feed if hasattr(response, "feed") else []
-    except Exception as e:
-        print(f"Fehler beim Abrufen der Beiträge für {did}: {e}")
-        return []
+        return response.feed
+    debug_print(f"Keine Beiträge für DID {did} gefunden.")
+    return []
 
 def fetch_followers(did):
-    try:
-        response = client.app.bsky.graph.get_follows({"actor": did})
+    response = retry_request(client.app.bsky.graph.get_follows, {"actor": did})
+    if response and hasattr(response, "follows"):
         debug_print(f"Follower abgerufen für DID {did}: {response}")
         return [follower.did for follower in response.follows]
-    except Exception as e:
-        print(f"Fehler beim Abrufen der Follower für {did}: {e}")
-        return []
+    debug_print(f"Keine Follower für DID {did} gefunden.")
+    return []
 
 def calculate_profile_score(profile, posts):
     score = 0
     critical_hits = 0
     contextual_hits = 0
+    details = {"bio_hits": {"critical": [], "contextual": [], "positive": []}, "post_hits": {"critical": [], "contextual": [], "positive": []}}
 
-    bio = getattr(profile, "description", "").lower() if profile else ""
+    bio = getattr(profile, "description", "").lower() if profile and hasattr(profile, "description") else ""
     for keyword, weight in CRITICAL_KEYWORDS.items():
         if keyword in bio:
             score += weight
             critical_hits += 1
+            details["bio_hits"]["critical"].append({"keyword": keyword, "weight": weight})
     for keyword, weight in CONTEXTUAL_KEYWORDS.items():
         if keyword in bio:
             score += weight
             contextual_hits += 1
+            details["bio_hits"]["contextual"].append({"keyword": keyword, "weight": weight})
+    for keyword in POSITIVE_KEYWORDS:
+        if keyword in bio:
+            score -= 2
+            details["bio_hits"]["positive"].append({"keyword": keyword, "weight": -2})
 
     for post in posts:
         content = getattr(post.record, "text", "").lower() if hasattr(post, "record") else ""
@@ -155,73 +183,60 @@ def calculate_profile_score(profile, posts):
             if keyword in content:
                 score += weight
                 critical_hits += 1
+                details["post_hits"]["critical"].append({"keyword": keyword, "weight": weight})
         for keyword, weight in CONTEXTUAL_KEYWORDS.items():
             if keyword in content:
                 score += weight
                 contextual_hits += 1
-
-    for keyword in POSITIVE_KEYWORDS:
-        if keyword in bio:
-            score -= 2
+                details["post_hits"]["contextual"].append({"keyword": keyword, "weight": weight})
+        for keyword in POSITIVE_KEYWORDS:
+            if keyword in content:
+                score -= 2
+                details["post_hits"]["positive"].append({"keyword": keyword, "weight": -2})
 
     debug_print(f"Score berechnet: {score} (Critical: {critical_hits}, Contextual: {contextual_hits})")
-    return {"score": score, "critical_hits": critical_hits, "contextual_hits": contextual_hits}
+    return {"score": score, "critical_hits": critical_hits, "contextual_hits": contextual_hits, "details": details}
 
-def analyze_user(identifier, analyzed_users, moderation_list_file, suspect_list_file, whitelist_file):
+def analyze_user(identifier, analyzed_users, moderation_list_file, suspect_list_file):
     did, handle = resolve_handle_to_did(identifier)
     if not did:
         print(f"Fehler: Konnte DID für '{identifier}' nicht auflösen.")
         return
-
-    debug_print(f"Analysiere Benutzer: {did} ({handle})")
 
     if did in analyzed_users:
         debug_print(f"Benutzer {did} wurde bereits analysiert. Überspringe.")
         return
 
     profile = get_profile(did)
-    posts = fetch_user_posts_and_replies(did)
+    if not profile:
+        print(f"Profil konnte für Benutzer {did} nicht geladen werden. Überspringe.")
+        log_action("profile_not_found", did, handle, "Profil konnte nicht abgerufen werden")
+        return
 
+    posts = fetch_user_posts(did)
     analysis = calculate_profile_score(profile, posts)
-    if analysis["score"] >= 10 and analysis["critical_hits"] >= 3:
-        print(f"Benutzer {did} erfüllt Kriterien für die Moderationsliste.")
-        moderation_list = load_local_list(moderation_list_file)
-        if did not in moderation_list:
-            moderation_list.append(did)
-            save_local_list(moderation_list, moderation_list_file)
-        log_action("add_to_moderation_list", did, handle, f"Score: {analysis['score']}")
-    elif analysis["score"] >= 5:
-        print(f"Benutzer {did} wird zur Verdachtsliste hinzugefügt.")
-        suspect_list = load_local_list(suspect_list_file)
-        if did not in suspect_list:
-            suspect_list.append(did)
-            save_local_list(suspect_list, suspect_list_file)
-        log_action("add_to_suspect_list", did, handle, f"Score: {analysis['score']}")
-    elif analysis["score"] <= -4:
-        print(f"Benutzer {did} wird zur Whitelist hinzugefügt.")
-        whitelist = load_local_list(whitelist_file)
-        if did not in whitelist:
-            whitelist.append(did)
-            save_local_list(whitelist, whitelist_file)
-        log_action("add_to_whitelist", did, handle, f"Score: {analysis['score']}")
-    else:
-        log_action("no_action", did, handle, f"Score: {analysis['score']}")
 
-    analyzed_users.append(did)
-    save_local_list(analyzed_users, "analyzed_users.json")
+    if analysis["score"] >= 10:
+        save_to_list(moderation_list_file, did, "add_to_moderation_list", handle, analysis["details"])
+    elif analysis["score"] >= 5:
+        save_to_list(suspect_list_file, did, "add_to_suspect_list", handle, analysis["details"])
+    else:
+        log_action("no_action", did, handle, analysis["details"])
+
+    analyzed_users.add(did)
+    save_local_list(list(analyzed_users), "analyzed_users.json")
 
 def main():
     moderation_list_file = "moderation_list.json"
     suspect_list_file = "suspect_list.json"
-    whitelist_file = "whitelist.json"
     start_users = load_local_list("start_users.json")
-    analyzed_users = load_local_list("analyzed_users.json")
+    analyzed_users = set(load_local_list("analyzed_users.json"))
 
     for user in start_users:
-        analyze_user(user, analyzed_users, moderation_list_file, suspect_list_file, whitelist_file)
+        analyze_user(user, analyzed_users, moderation_list_file, suspect_list_file)
         followers = fetch_followers(user)
         for follower in followers:
-            analyze_user(follower, analyzed_users, moderation_list_file, suspect_list_file, whitelist_file)
+            analyze_user(follower, analyzed_users, moderation_list_file, suspect_list_file)
 
 if __name__ == "__main__":
     main()
