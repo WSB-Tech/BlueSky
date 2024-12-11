@@ -1,0 +1,1502 @@
+[
+    {
+        "timestamp": "2024-12-10T21:22:05.938920Z",
+        "action": "analyze_user",
+        "user": "did:example:user1",
+        "details": "Beginne Analyse"
+    },
+    {
+        "timestamp": "2024-12-10T21:22:05.939920Z",
+        "action": "analyze_user",
+        "user": "did:example:user2",
+        "details": "Beginne Analyse"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:00.406870Z",
+        "action": "no_action",
+        "user": "oliweb.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:01.229149Z",
+        "action": "no_action",
+        "user": "did:plc:api2mizqokk6i2knxzuvo34x",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:01.753917Z",
+        "action": "no_action",
+        "user": "did:plc:eibxuwyi32fkqfxtb7ev4gpo",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:02.307168Z",
+        "action": "no_action",
+        "user": "did:plc:yori2dlcpkc5ercg7jyxanjz",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:02.837499Z",
+        "action": "no_action",
+        "user": "did:plc:w5rfgtg7dairgjkmq7bfjw22",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:03.422370Z",
+        "action": "no_action",
+        "user": "did:plc:nhspx7grpd7gzrhl7etneeuc",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:03.923597Z",
+        "action": "no_action",
+        "user": "did:plc:o7pfmbhrs3fttog56krog4g3",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:04.540551Z",
+        "action": "no_action",
+        "user": "did:plc:g6b2h3uts6dl6xodz3duxk6u",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:05.076415Z",
+        "action": "no_action",
+        "user": "did:plc:h7obn4tkp47wn7gqh4oe5eij",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:05.586133Z",
+        "action": "no_action",
+        "user": "did:plc:gr3zsqab63cfvv7nao4mrh7v",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:06.144445Z",
+        "action": "no_action",
+        "user": "did:plc:ee7uitkx3hq2y5bqez7uymvw",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:06.698279Z",
+        "action": "no_action",
+        "user": "did:plc:riloo6tr65xzrabbroo3qc72",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:07.251177Z",
+        "action": "no_action",
+        "user": "did:plc:7vuskqp6z3bk723qeqs2prvn",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:08.046850Z",
+        "action": "no_action",
+        "user": "did:plc:vco53siad42qdsl6znwo5aqj",
+        "details": "Score: -2"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:08.801587Z",
+        "action": "no_action",
+        "user": "did:plc:u33nyqexoizvkd7oq3k4izix",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:09.344299Z",
+        "action": "no_action",
+        "user": "did:plc:zorx72vm56gtgv4hzl66q4zm",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:09.872165Z",
+        "action": "no_action",
+        "user": "did:plc:zx3fea4j6a4m5ior3332q2l5",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:10.420396Z",
+        "action": "no_action",
+        "user": "did:plc:mohen43fazdwgm3jwxw7d4lh",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:11.014521Z",
+        "action": "no_action",
+        "user": "did:plc:plqxgtzz6kcj67qhbmv5nvbr",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:11.547913Z",
+        "action": "no_action",
+        "user": "did:plc:v5mboqluilyug3mttyhllji6",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:12.093669Z",
+        "action": "no_action",
+        "user": "did:plc:22j7q6b4gz65po3hoe7reiiu",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:12.629114Z",
+        "action": "no_action",
+        "user": "did:plc:p7j6hp6s72xylk7pft546v5w",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:13.188175Z",
+        "action": "no_action",
+        "user": "did:plc:e7rihrnrmwg7ucat4do3nkge",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:13.782735Z",
+        "action": "no_action",
+        "user": "did:plc:evoxinaxbwey6vqzyceg6h4o",
+        "details": "Score: 2"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:14.379961Z",
+        "action": "no_action",
+        "user": "did:plc:g7ecqq4mrguwveodrydgnfky",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:14.934784Z",
+        "action": "no_action",
+        "user": "did:plc:n6r7pupg4nlngfrvuvl65cqq",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:15.569615Z",
+        "action": "no_action",
+        "user": "did:plc:x4mzdcf5dzxicy7n4dvlof7p",
+        "details": "Score: 4"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:16.117192Z",
+        "action": "no_action",
+        "user": "did:plc:jfbmsl5nolcxh7wyybmrj4ot",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:16.709690Z",
+        "action": "no_action",
+        "user": "did:plc:f4uyjd6v36umuhauu6ueffem",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:17.251771Z",
+        "action": "no_action",
+        "user": "did:plc:y4zs4cabaezzwx3bz2e5nnj2",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:17.791166Z",
+        "action": "no_action",
+        "user": "did:plc:zoyv7zzljxrsoi7vv6ucqljh",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:18.348526Z",
+        "action": "no_action",
+        "user": "did:plc:wlq5denegl4hga34ihaflebn",
+        "details": "Score: -2"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:18.914769Z",
+        "action": "no_action",
+        "user": "did:plc:ol3j42oowru3x6r6u3qqgnfr",
+        "details": "Score: -2"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:19.475368Z",
+        "action": "no_action",
+        "user": "did:plc:ic2osuf4tbeum6omqld2tl3q",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:20.214502Z",
+        "action": "no_action",
+        "user": "did:plc:4et7fc722ayrpmlj2ldrhza7",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:20.845991Z",
+        "action": "no_action",
+        "user": "did:plc:ze734g23l6ejkhq65zgdd3xs",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:21.376055Z",
+        "action": "no_action",
+        "user": "did:plc:5xyjxbl72m4d3je4pj4uvwes",
+        "details": "Score: 2"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:21.923878Z",
+        "action": "no_action",
+        "user": "did:plc:jjcaglxtiou73r6q3xllnbzl",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:22.465803Z",
+        "action": "no_action",
+        "user": "did:plc:ouf7jfi2dqblxlvxyukiuglf",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:23.061111Z",
+        "action": "no_action",
+        "user": "did:plc:tc6qzvjazvrwxr45cujuoxzu",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:23.653767Z",
+        "action": "no_action",
+        "user": "did:plc:j5pgz5xbpsbvu2arseqty2dw",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:24.190369Z",
+        "action": "no_action",
+        "user": "did:plc:ok6lwg57fsvckkiqnoiknzsq",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:24.760511Z",
+        "action": "no_action",
+        "user": "did:plc:tf2wpwujbwgmmaushokdcv7x",
+        "details": "Score: -2"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:25.319965Z",
+        "action": "no_action",
+        "user": "did:plc:3dfnd2wsslno77zbemo6rlyi",
+        "details": "Score: 3"
+    },
+    {
+        "timestamp": "2024-12-10T21:27:25.854150Z",
+        "action": "no_action",
+        "user": "did:plc:nfkrwda7acewry5rz2slyxln",
+        "details": "Score: -4"
+    },
+    {
+        "timestamp": "2024-12-10T21:32:54.730516Z",
+        "action": "no_action",
+        "user": "oliweb.bsky.social",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:32:55.640065Z",
+        "action": "no_action",
+        "user": "did:plc:api2mizqokk6i2knxzuvo34x",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:32:56.204645Z",
+        "action": "no_action",
+        "user": "did:plc:eibxuwyi32fkqfxtb7ev4gpo",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:32:56.756280Z",
+        "action": "no_action",
+        "user": "did:plc:yori2dlcpkc5ercg7jyxanjz",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:32:57.285645Z",
+        "action": "no_action",
+        "user": "did:plc:w5rfgtg7dairgjkmq7bfjw22",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:32:57.828578Z",
+        "action": "no_action",
+        "user": "did:plc:nhspx7grpd7gzrhl7etneeuc",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:32:58.330001Z",
+        "action": "no_action",
+        "user": "did:plc:o7pfmbhrs3fttog56krog4g3",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:32:58.825129Z",
+        "action": "no_action",
+        "user": "did:plc:g6b2h3uts6dl6xodz3duxk6u",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:32:59.337563Z",
+        "action": "no_action",
+        "user": "did:plc:h7obn4tkp47wn7gqh4oe5eij",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:32:59.859201Z",
+        "action": "no_action",
+        "user": "did:plc:gr3zsqab63cfvv7nao4mrh7v",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:33:00.387136Z",
+        "action": "no_action",
+        "user": "did:plc:ee7uitkx3hq2y5bqez7uymvw",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:33:58.220484Z",
+        "action": "no_action",
+        "user": "oliweb.bsky.social",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:33:58.975689Z",
+        "action": "no_action",
+        "user": "did:plc:api2mizqokk6i2knxzuvo34x",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:33:59.501810Z",
+        "action": "no_action",
+        "user": "did:plc:eibxuwyi32fkqfxtb7ev4gpo",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:34:00.133117Z",
+        "action": "no_action",
+        "user": "did:plc:yori2dlcpkc5ercg7jyxanjz",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:34:00.653602Z",
+        "action": "no_action",
+        "user": "did:plc:w5rfgtg7dairgjkmq7bfjw22",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:03.980945Z",
+        "action": "no_action",
+        "user": "did:plc:dpaixt22dbaiwasd44bpfrtl",
+        "handle": "oliweb.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:04.801116Z",
+        "action": "no_action",
+        "user": "did:plc:api2mizqokk6i2knxzuvo34x",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:05.333908Z",
+        "action": "no_action",
+        "user": "did:plc:eibxuwyi32fkqfxtb7ev4gpo",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:05.874441Z",
+        "action": "no_action",
+        "user": "did:plc:yori2dlcpkc5ercg7jyxanjz",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:06.437958Z",
+        "action": "no_action",
+        "user": "did:plc:w5rfgtg7dairgjkmq7bfjw22",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:07.005808Z",
+        "action": "no_action",
+        "user": "did:plc:nhspx7grpd7gzrhl7etneeuc",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:07.458393Z",
+        "action": "no_action",
+        "user": "did:plc:o7pfmbhrs3fttog56krog4g3",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:08.012690Z",
+        "action": "no_action",
+        "user": "did:plc:g6b2h3uts6dl6xodz3duxk6u",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:08.513732Z",
+        "action": "no_action",
+        "user": "did:plc:h7obn4tkp47wn7gqh4oe5eij",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:08.995106Z",
+        "action": "no_action",
+        "user": "did:plc:gr3zsqab63cfvv7nao4mrh7v",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:09.515377Z",
+        "action": "no_action",
+        "user": "did:plc:ee7uitkx3hq2y5bqez7uymvw",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:10.283001Z",
+        "action": "no_action",
+        "user": "did:plc:riloo6tr65xzrabbroo3qc72",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:11.081891Z",
+        "action": "no_action",
+        "user": "did:plc:7vuskqp6z3bk723qeqs2prvn",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:11.622524Z",
+        "action": "no_action",
+        "user": "did:plc:vco53siad42qdsl6znwo5aqj",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:12.219719Z",
+        "action": "no_action",
+        "user": "did:plc:u33nyqexoizvkd7oq3k4izix",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:12.722318Z",
+        "action": "no_action",
+        "user": "did:plc:zorx72vm56gtgv4hzl66q4zm",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:13.240642Z",
+        "action": "no_action",
+        "user": "did:plc:zx3fea4j6a4m5ior3332q2l5",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:13.789780Z",
+        "action": "no_action",
+        "user": "did:plc:mohen43fazdwgm3jwxw7d4lh",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:14.346958Z",
+        "action": "no_action",
+        "user": "did:plc:plqxgtzz6kcj67qhbmv5nvbr",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:14.829113Z",
+        "action": "no_action",
+        "user": "did:plc:v5mboqluilyug3mttyhllji6",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:15.339912Z",
+        "action": "no_action",
+        "user": "did:plc:22j7q6b4gz65po3hoe7reiiu",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:15.891603Z",
+        "action": "no_action",
+        "user": "did:plc:p7j6hp6s72xylk7pft546v5w",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:16.497189Z",
+        "action": "no_action",
+        "user": "did:plc:e7rihrnrmwg7ucat4do3nkge",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:17.096711Z",
+        "action": "no_action",
+        "user": "did:plc:evoxinaxbwey6vqzyceg6h4o",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:17.641304Z",
+        "action": "no_action",
+        "user": "did:plc:g7ecqq4mrguwveodrydgnfky",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:18.189537Z",
+        "action": "no_action",
+        "user": "did:plc:n6r7pupg4nlngfrvuvl65cqq",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:18.766030Z",
+        "action": "no_action",
+        "user": "did:plc:x4mzdcf5dzxicy7n4dvlof7p",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:19.270268Z",
+        "action": "no_action",
+        "user": "did:plc:jfbmsl5nolcxh7wyybmrj4ot",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:19.798457Z",
+        "action": "no_action",
+        "user": "did:plc:f4uyjd6v36umuhauu6ueffem",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:20.413066Z",
+        "action": "no_action",
+        "user": "did:plc:y4zs4cabaezzwx3bz2e5nnj2",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:20.981947Z",
+        "action": "no_action",
+        "user": "did:plc:zoyv7zzljxrsoi7vv6ucqljh",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:40:21.519987Z",
+        "action": "no_action",
+        "user": "did:plc:wlq5denegl4hga34ihaflebn",
+        "handle": null,
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:42:05.031513Z",
+        "action": "no_action",
+        "user": "did:plc:dpaixt22dbaiwasd44bpfrtl",
+        "handle": "oliweb.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:42:06.014953Z",
+        "action": "no_action",
+        "user": "did:plc:api2mizqokk6i2knxzuvo34x",
+        "handle": "peterbreuer.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:42:06.707146Z",
+        "action": "no_action",
+        "user": "did:plc:eibxuwyi32fkqfxtb7ev4gpo",
+        "handle": "friedemannkarig.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:42:07.479261Z",
+        "action": "no_action",
+        "user": "did:plc:yori2dlcpkc5ercg7jyxanjz",
+        "handle": "florianaigner.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:42:08.197933Z",
+        "action": "no_action",
+        "user": "did:plc:w5rfgtg7dairgjkmq7bfjw22",
+        "handle": "maxpichl.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:42:08.938986Z",
+        "action": "no_action",
+        "user": "did:plc:nhspx7grpd7gzrhl7etneeuc",
+        "handle": "starneydude.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:42:09.581465Z",
+        "action": "no_action",
+        "user": "did:plc:o7pfmbhrs3fttog56krog4g3",
+        "handle": "strukturteufel.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:42:10.221726Z",
+        "action": "no_action",
+        "user": "did:plc:g6b2h3uts6dl6xodz3duxk6u",
+        "handle": "realbabylonbee.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:42:10.858118Z",
+        "action": "no_action",
+        "user": "did:plc:h7obn4tkp47wn7gqh4oe5eij",
+        "handle": "stephenking.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:42:11.517756Z",
+        "action": "no_action",
+        "user": "did:plc:gr3zsqab63cfvv7nao4mrh7v",
+        "handle": "artificial.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:02.209278Z",
+        "action": "no_action",
+        "user": "did:plc:dpaixt22dbaiwasd44bpfrtl",
+        "handle": "oliweb.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:03.417062Z",
+        "action": "no_action",
+        "user": "did:plc:api2mizqokk6i2knxzuvo34x",
+        "handle": "peterbreuer.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:04.300647Z",
+        "action": "no_action",
+        "user": "did:plc:eibxuwyi32fkqfxtb7ev4gpo",
+        "handle": "friedemannkarig.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:05.214624Z",
+        "action": "no_action",
+        "user": "did:plc:yori2dlcpkc5ercg7jyxanjz",
+        "handle": "florianaigner.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:06.188700Z",
+        "action": "no_action",
+        "user": "did:plc:w5rfgtg7dairgjkmq7bfjw22",
+        "handle": "maxpichl.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:07.056570Z",
+        "action": "no_action",
+        "user": "did:plc:nhspx7grpd7gzrhl7etneeuc",
+        "handle": "starneydude.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:07.822660Z",
+        "action": "no_action",
+        "user": "did:plc:o7pfmbhrs3fttog56krog4g3",
+        "handle": "strukturteufel.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:08.643543Z",
+        "action": "no_action",
+        "user": "did:plc:g6b2h3uts6dl6xodz3duxk6u",
+        "handle": "realbabylonbee.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:09.394203Z",
+        "action": "no_action",
+        "user": "did:plc:h7obn4tkp47wn7gqh4oe5eij",
+        "handle": "stephenking.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:10.160109Z",
+        "action": "no_action",
+        "user": "did:plc:gr3zsqab63cfvv7nao4mrh7v",
+        "handle": "artificial.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:10.966607Z",
+        "action": "no_action",
+        "user": "did:plc:ee7uitkx3hq2y5bqez7uymvw",
+        "handle": "raulkrauthausen.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:11.757512Z",
+        "action": "no_action",
+        "user": "did:plc:riloo6tr65xzrabbroo3qc72",
+        "handle": "philiplebutt.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:12.709921Z",
+        "action": "no_action",
+        "user": "did:plc:7vuskqp6z3bk723qeqs2prvn",
+        "handle": "annettedittert.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:13.505382Z",
+        "action": "no_action",
+        "user": "did:plc:vco53siad42qdsl6znwo5aqj",
+        "handle": "vondobrowolski.de",
+        "details": "Score: -2"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:14.273693Z",
+        "action": "no_action",
+        "user": "did:plc:u33nyqexoizvkd7oq3k4izix",
+        "handle": "nminkmar.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:15.028660Z",
+        "action": "no_action",
+        "user": "did:plc:zorx72vm56gtgv4hzl66q4zm",
+        "handle": "taz.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:15.806439Z",
+        "action": "no_action",
+        "user": "did:plc:zx3fea4j6a4m5ior3332q2l5",
+        "handle": "uebermedien.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:16.605919Z",
+        "action": "no_action",
+        "user": "did:plc:mohen43fazdwgm3jwxw7d4lh",
+        "handle": "juergenzimmerer.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:17.380019Z",
+        "action": "no_action",
+        "user": "did:plc:plqxgtzz6kcj67qhbmv5nvbr",
+        "handle": "felixhuesmann.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:18.263963Z",
+        "action": "no_action",
+        "user": "did:plc:v5mboqluilyug3mttyhllji6",
+        "handle": "correctiv.org",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:19.143609Z",
+        "action": "no_action",
+        "user": "did:plc:22j7q6b4gz65po3hoe7reiiu",
+        "handle": "emcke.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:20.013379Z",
+        "action": "no_action",
+        "user": "did:plc:p7j6hp6s72xylk7pft546v5w",
+        "handle": "beauftragte.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:50:21.012878Z",
+        "action": "no_action",
+        "user": "did:plc:e7rihrnrmwg7ucat4do3nkge",
+        "handle": "diw.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:52:32.143489Z",
+        "action": "no_action",
+        "user": "did:plc:dpaixt22dbaiwasd44bpfrtl",
+        "handle": "oliweb.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:52:32.986032Z",
+        "action": "no_action",
+        "user": "did:plc:api2mizqokk6i2knxzuvo34x",
+        "handle": "peterbreuer.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:52:33.676782Z",
+        "action": "no_action",
+        "user": "did:plc:eibxuwyi32fkqfxtb7ev4gpo",
+        "handle": "friedemannkarig.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:52:34.384240Z",
+        "action": "no_action",
+        "user": "did:plc:yori2dlcpkc5ercg7jyxanjz",
+        "handle": "florianaigner.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:52:35.075634Z",
+        "action": "no_action",
+        "user": "did:plc:w5rfgtg7dairgjkmq7bfjw22",
+        "handle": "maxpichl.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:52:35.754109Z",
+        "action": "no_action",
+        "user": "did:plc:nhspx7grpd7gzrhl7etneeuc",
+        "handle": "starneydude.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:52:36.384493Z",
+        "action": "no_action",
+        "user": "did:plc:o7pfmbhrs3fttog56krog4g3",
+        "handle": "strukturteufel.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:52:37.000308Z",
+        "action": "no_action",
+        "user": "did:plc:g6b2h3uts6dl6xodz3duxk6u",
+        "handle": "realbabylonbee.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:52:37.635898Z",
+        "action": "no_action",
+        "user": "did:plc:h7obn4tkp47wn7gqh4oe5eij",
+        "handle": "stephenking.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:52:38.267017Z",
+        "action": "no_action",
+        "user": "did:plc:gr3zsqab63cfvv7nao4mrh7v",
+        "handle": "artificial.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:52:38.897863Z",
+        "action": "no_action",
+        "user": "did:plc:ee7uitkx3hq2y5bqez7uymvw",
+        "handle": "raulkrauthausen.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:52:39.567210Z",
+        "action": "no_action",
+        "user": "did:plc:riloo6tr65xzrabbroo3qc72",
+        "handle": "philiplebutt.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:52:40.394104Z",
+        "action": "no_action",
+        "user": "did:plc:7vuskqp6z3bk723qeqs2prvn",
+        "handle": "annettedittert.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T21:52:41.057516Z",
+        "action": "no_action",
+        "user": "did:plc:vco53siad42qdsl6znwo5aqj",
+        "handle": "vondobrowolski.de",
+        "details": "Score: -2"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:28.082617Z",
+        "action": "no_action",
+        "user": "did:plc:dpaixt22dbaiwasd44bpfrtl",
+        "handle": "oliweb.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:28.974101Z",
+        "action": "no_action",
+        "user": "did:plc:api2mizqokk6i2knxzuvo34x",
+        "handle": "peterbreuer.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:29.681641Z",
+        "action": "no_action",
+        "user": "did:plc:eibxuwyi32fkqfxtb7ev4gpo",
+        "handle": "friedemannkarig.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:31.256264Z",
+        "action": "no_action",
+        "user": "did:plc:yori2dlcpkc5ercg7jyxanjz",
+        "handle": "florianaigner.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:31.975395Z",
+        "action": "no_action",
+        "user": "did:plc:w5rfgtg7dairgjkmq7bfjw22",
+        "handle": "maxpichl.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:32.710952Z",
+        "action": "no_action",
+        "user": "did:plc:nhspx7grpd7gzrhl7etneeuc",
+        "handle": "starneydude.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:33.373682Z",
+        "action": "no_action",
+        "user": "did:plc:o7pfmbhrs3fttog56krog4g3",
+        "handle": "strukturteufel.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:34.032245Z",
+        "action": "no_action",
+        "user": "did:plc:g6b2h3uts6dl6xodz3duxk6u",
+        "handle": "realbabylonbee.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:34.685815Z",
+        "action": "no_action",
+        "user": "did:plc:h7obn4tkp47wn7gqh4oe5eij",
+        "handle": "stephenking.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:35.333546Z",
+        "action": "no_action",
+        "user": "did:plc:gr3zsqab63cfvv7nao4mrh7v",
+        "handle": "artificial.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:36.004643Z",
+        "action": "no_action",
+        "user": "did:plc:ee7uitkx3hq2y5bqez7uymvw",
+        "handle": "raulkrauthausen.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:36.922896Z",
+        "action": "no_action",
+        "user": "did:plc:riloo6tr65xzrabbroo3qc72",
+        "handle": "philiplebutt.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:37.825379Z",
+        "action": "no_action",
+        "user": "did:plc:7vuskqp6z3bk723qeqs2prvn",
+        "handle": "annettedittert.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:38.500663Z",
+        "action": "no_action",
+        "user": "did:plc:vco53siad42qdsl6znwo5aqj",
+        "handle": "vondobrowolski.de",
+        "details": "Score: -2"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:39.322644Z",
+        "action": "no_action",
+        "user": "did:plc:u33nyqexoizvkd7oq3k4izix",
+        "handle": "nminkmar.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:40.006280Z",
+        "action": "no_action",
+        "user": "did:plc:zorx72vm56gtgv4hzl66q4zm",
+        "handle": "taz.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:40.709329Z",
+        "action": "no_action",
+        "user": "did:plc:zx3fea4j6a4m5ior3332q2l5",
+        "handle": "uebermedien.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:41.398832Z",
+        "action": "no_action",
+        "user": "did:plc:mohen43fazdwgm3jwxw7d4lh",
+        "handle": "juergenzimmerer.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:42.095486Z",
+        "action": "no_action",
+        "user": "did:plc:plqxgtzz6kcj67qhbmv5nvbr",
+        "handle": "felixhuesmann.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:42.896103Z",
+        "action": "no_action",
+        "user": "did:plc:v5mboqluilyug3mttyhllji6",
+        "handle": "correctiv.org",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:43.697011Z",
+        "action": "no_action",
+        "user": "did:plc:22j7q6b4gz65po3hoe7reiiu",
+        "handle": "emcke.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:44.368459Z",
+        "action": "no_action",
+        "user": "did:plc:p7j6hp6s72xylk7pft546v5w",
+        "handle": "beauftragte.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:45.060132Z",
+        "action": "no_action",
+        "user": "did:plc:e7rihrnrmwg7ucat4do3nkge",
+        "handle": "diw.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:46.039228Z",
+        "action": "no_action",
+        "user": "did:plc:evoxinaxbwey6vqzyceg6h4o",
+        "handle": "ingwarpero.bsky.social",
+        "details": "Score: 2"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:46.720611Z",
+        "action": "no_action",
+        "user": "did:plc:g7ecqq4mrguwveodrydgnfky",
+        "handle": "renate-kuenast.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:47.437144Z",
+        "action": "no_action",
+        "user": "did:plc:n6r7pupg4nlngfrvuvl65cqq",
+        "handle": "beyond-ideology.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:48.127569Z",
+        "action": "no_action",
+        "user": "did:plc:x4mzdcf5dzxicy7n4dvlof7p",
+        "handle": "politicalbeauty.bsky.social",
+        "details": "Score: 4"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:48.789644Z",
+        "action": "no_action",
+        "user": "did:plc:jfbmsl5nolcxh7wyybmrj4ot",
+        "handle": "kino-zeit.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:49.535941Z",
+        "action": "no_action",
+        "user": "did:plc:f4uyjd6v36umuhauu6ueffem",
+        "handle": "re-publica.com",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:50.240144Z",
+        "action": "no_action",
+        "user": "did:plc:y4zs4cabaezzwx3bz2e5nnj2",
+        "handle": "georgetakei.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:50.942592Z",
+        "action": "no_action",
+        "user": "did:plc:zoyv7zzljxrsoi7vv6ucqljh",
+        "handle": "sasastanisic.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:51.678704Z",
+        "action": "no_action",
+        "user": "did:plc:wlq5denegl4hga34ihaflebn",
+        "handle": "georgrestle.bsky.social",
+        "details": "Score: -2"
+    },
+    {
+        "timestamp": "2024-12-10T22:17:52.469254Z",
+        "action": "no_action",
+        "user": "did:plc:ol3j42oowru3x6r6u3qqgnfr",
+        "handle": "andreaskemper.bsky.social",
+        "details": "Score: 1"
+    },
+    {
+        "timestamp": "2024-12-10T22:30:20.830371Z",
+        "action": "no_action",
+        "user": "did:plc:ic2osuf4tbeum6omqld2tl3q",
+        "handle": "raindiercks.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:30:21.618724Z",
+        "action": "no_action",
+        "user": "did:plc:4et7fc722ayrpmlj2ldrhza7",
+        "handle": "natalieamiri.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:30:22.259027Z",
+        "action": "no_action",
+        "user": "did:plc:ze734g23l6ejkhq65zgdd3xs",
+        "handle": "robert-habeck.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:30:22.922551Z",
+        "action": "no_action",
+        "user": "did:plc:5xyjxbl72m4d3je4pj4uvwes",
+        "handle": "gruene.de",
+        "details": "Score: 2"
+    },
+    {
+        "timestamp": "2024-12-10T22:30:23.607722Z",
+        "action": "no_action",
+        "user": "did:plc:jjcaglxtiou73r6q3xllnbzl",
+        "handle": "bmwk.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:30:24.247964Z",
+        "action": "no_action",
+        "user": "did:plc:ouf7jfi2dqblxlvxyukiuglf",
+        "handle": "diplo.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:30:24.918106Z",
+        "action": "no_action",
+        "user": "did:plc:tc6qzvjazvrwxr45cujuoxzu",
+        "handle": "steffi-lemke.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:30:25.580693Z",
+        "action": "no_action",
+        "user": "did:plc:j5pgz5xbpsbvu2arseqty2dw",
+        "handle": "dneuerer.bsky.social",
+        "details": "Score: 3"
+    },
+    {
+        "timestamp": "2024-12-10T22:30:26.230849Z",
+        "action": "no_action",
+        "user": "did:plc:ok6lwg57fsvckkiqnoiknzsq",
+        "handle": "mauriceconrad.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:30:26.922101Z",
+        "action": "no_action",
+        "user": "did:plc:tf2wpwujbwgmmaushokdcv7x",
+        "handle": "alanposener.bsky.social",
+        "details": "Score: -2"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:19.560508Z",
+        "action": "no_action",
+        "user": "did:plc:dpaixt22dbaiwasd44bpfrtl",
+        "handle": "oliweb.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:20.455919Z",
+        "action": "no_action",
+        "user": "did:plc:api2mizqokk6i2knxzuvo34x",
+        "handle": "peterbreuer.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:21.138428Z",
+        "action": "no_action",
+        "user": "did:plc:eibxuwyi32fkqfxtb7ev4gpo",
+        "handle": "friedemannkarig.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:21.898079Z",
+        "action": "no_action",
+        "user": "did:plc:yori2dlcpkc5ercg7jyxanjz",
+        "handle": "florianaigner.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:22.576801Z",
+        "action": "no_action",
+        "user": "did:plc:w5rfgtg7dairgjkmq7bfjw22",
+        "handle": "maxpichl.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:23.327667Z",
+        "action": "no_action",
+        "user": "did:plc:nhspx7grpd7gzrhl7etneeuc",
+        "handle": "starneydude.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:23.966992Z",
+        "action": "no_action",
+        "user": "did:plc:o7pfmbhrs3fttog56krog4g3",
+        "handle": "strukturteufel.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:24.621618Z",
+        "action": "no_action",
+        "user": "did:plc:g6b2h3uts6dl6xodz3duxk6u",
+        "handle": "realbabylonbee.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:25.277331Z",
+        "action": "no_action",
+        "user": "did:plc:h7obn4tkp47wn7gqh4oe5eij",
+        "handle": "stephenking.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:25.918599Z",
+        "action": "no_action",
+        "user": "did:plc:gr3zsqab63cfvv7nao4mrh7v",
+        "handle": "artificial.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:26.587541Z",
+        "action": "no_action",
+        "user": "did:plc:ee7uitkx3hq2y5bqez7uymvw",
+        "handle": "raulkrauthausen.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:41.435150Z",
+        "action": "no_action",
+        "user": "did:plc:riloo6tr65xzrabbroo3qc72",
+        "handle": "philiplebutt.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:42.119148Z",
+        "action": "no_action",
+        "user": "did:plc:7vuskqp6z3bk723qeqs2prvn",
+        "handle": "annettedittert.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:43.093929Z",
+        "action": "no_action",
+        "user": "did:plc:vco53siad42qdsl6znwo5aqj",
+        "handle": "vondobrowolski.de",
+        "details": "Score: -2"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:43.976177Z",
+        "action": "no_action",
+        "user": "did:plc:u33nyqexoizvkd7oq3k4izix",
+        "handle": "nminkmar.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:44.642320Z",
+        "action": "no_action",
+        "user": "did:plc:zorx72vm56gtgv4hzl66q4zm",
+        "handle": "taz.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:45.332262Z",
+        "action": "no_action",
+        "user": "did:plc:zx3fea4j6a4m5ior3332q2l5",
+        "handle": "uebermedien.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:46.011113Z",
+        "action": "no_action",
+        "user": "did:plc:mohen43fazdwgm3jwxw7d4lh",
+        "handle": "juergenzimmerer.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:37:46.674805Z",
+        "action": "no_action",
+        "user": "did:plc:plqxgtzz6kcj67qhbmv5nvbr",
+        "handle": "felixhuesmann.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:26.446758Z",
+        "action": "no_action",
+        "user": "did:plc:v5mboqluilyug3mttyhllji6",
+        "handle": "correctiv.org",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:27.099758Z",
+        "action": "no_action",
+        "user": "did:plc:22j7q6b4gz65po3hoe7reiiu",
+        "handle": "emcke.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:27.773839Z",
+        "action": "no_action",
+        "user": "did:plc:p7j6hp6s72xylk7pft546v5w",
+        "handle": "beauftragte.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:28.508517Z",
+        "action": "no_action",
+        "user": "did:plc:e7rihrnrmwg7ucat4do3nkge",
+        "handle": "diw.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:29.197452Z",
+        "action": "no_action",
+        "user": "did:plc:evoxinaxbwey6vqzyceg6h4o",
+        "handle": "ingwarpero.bsky.social",
+        "details": "Score: 2"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:29.896018Z",
+        "action": "no_action",
+        "user": "did:plc:g7ecqq4mrguwveodrydgnfky",
+        "handle": "renate-kuenast.de",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:30.606027Z",
+        "action": "no_action",
+        "user": "did:plc:n6r7pupg4nlngfrvuvl65cqq",
+        "handle": "beyond-ideology.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:31.288823Z",
+        "action": "no_action",
+        "user": "did:plc:x4mzdcf5dzxicy7n4dvlof7p",
+        "handle": "politicalbeauty.bsky.social",
+        "details": "Score: 4"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:31.961516Z",
+        "action": "no_action",
+        "user": "did:plc:jfbmsl5nolcxh7wyybmrj4ot",
+        "handle": "kino-zeit.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:32.638450Z",
+        "action": "no_action",
+        "user": "did:plc:f4uyjd6v36umuhauu6ueffem",
+        "handle": "re-publica.com",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:33.329346Z",
+        "action": "no_action",
+        "user": "did:plc:y4zs4cabaezzwx3bz2e5nnj2",
+        "handle": "georgetakei.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:34.040610Z",
+        "action": "no_action",
+        "user": "did:plc:zoyv7zzljxrsoi7vv6ucqljh",
+        "handle": "sasastanisic.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:34.805166Z",
+        "action": "no_action",
+        "user": "did:plc:wlq5denegl4hga34ihaflebn",
+        "handle": "georgrestle.bsky.social",
+        "details": "Score: -2"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:35.484745Z",
+        "action": "no_action",
+        "user": "did:plc:ol3j42oowru3x6r6u3qqgnfr",
+        "handle": "andreaskemper.bsky.social",
+        "details": "Score: 1"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:36.193764Z",
+        "action": "no_action",
+        "user": "did:plc:ic2osuf4tbeum6omqld2tl3q",
+        "handle": "raindiercks.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:36.887201Z",
+        "action": "no_action",
+        "user": "did:plc:4et7fc722ayrpmlj2ldrhza7",
+        "handle": "natalieamiri.bsky.social",
+        "details": "Score: 0"
+    },
+    {
+        "timestamp": "2024-12-10T22:46:37.584207Z",
+        "action": "no_action",
+        "user": "did:plc:ze734g23l6ejkhq65zgdd3xs",
+        "handle": "robert-habeck.de",
+        "details": "Score: 0"
+    }
+]
