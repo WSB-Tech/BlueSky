@@ -21,7 +21,37 @@
         "asylantenflut": 5,
         "schmarotzer": 4,
         "kanake": 5,
-        "zigeuner": 5
+        "zigeuner": 5,
+        "rassenkrieg": 5,
+        "großer austausch": 5,
+        "volksgemeinschaft": 5,
+        "rassenhygiene": 5, 
+        "judenfrage": 5,
+        "neger": 5,
+        "moslemhorden": 4,
+        "überfremdung": 4,
+        "nationaler widerstand": 4,
+        "kulturmarxismus": 4,
+        "antideutscher": 4,
+        "multikulti-wahn": 4,
+        "deutsches reich": 5,
+        "nordic resistance": 5,
+        "ethnopluralismus": 4,
+        "schuldkult": 4,
+        "volkskörper": 5,
+        "eu-diktatur": 4,
+        "landvolk": 4,
+        "heimatschutz": 4,
+        "deutschtum": 4,
+        "volkstod": 5,
+        "rassenschande": 5,
+        "arier": 5,
+        "vaterlandsverräter": 5,
+        "europäisches volk": 4,
+        "heimatliebe": 4,
+        "autochthone": 4,
+        "rechtsnational": 4,
+        "ethnische säuberung": 5
     },
     "contextual_keywords": {
         "rechte": 2,
@@ -43,7 +73,8 @@
         "nsdap": 3,
         "npd": 3,
         "dritter weg": 3,
-        "1%": 3
+        "1%": 3,
+        "völkermord": 3
     },
     "positive_keywords": [
         "journalist",
@@ -68,6 +99,15 @@
         "pro asyl",
         "vvn-bda",
         "seebrücke",
-        "omas gegen rechts"
+        "omas gegen rechts",
+        "klimakrise",
+        "umweltschutz",
+        "antifaschistisch",
+        "inklusion",
+        "gewaltfrei",
+        "humanismus",
+        "sozialgerechtigkeit",
+        "zukunft gestalten",
+        "antidisriminierung"
     ]
 }
