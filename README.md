@@ -1,5 +1,3 @@
----
-
 ## **BlueSky Moderation Bot**
 
 ### **Überblick**
